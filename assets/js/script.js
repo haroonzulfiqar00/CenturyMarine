@@ -25,25 +25,21 @@ $(".close-mega-menu").click(function () {
 $(document).ready(function () {
     $('.custom-toggle-icon').click(function () {
 
-        var togglerIcon = $('.custom-toggle-icon');
+        var togglerIcon = $(this).find('span.fa');
 
-        var closeIcon = togglerIcon.find('img.close-icon');
-        var barsIcon = togglerIcon.find('img.bars-icon');
 
         const $menu = $(this).closest(".mobile-header").next(".mobile-header-list");
 
         if (!$menu.hasClass('mobile-menu-show')) {
 
-            closeIcon.show();
-            barsIcon.hide();
+            togglerIcon.addClass('fa-close').removeClass('fa-bars');
 
             $menu.css('display', 'block');
             setTimeout(() => {
                 $menu.addClass('mobile-menu-show');
             }, 10);
         } else {
-            closeIcon.hide();
-            barsIcon.show();
+            togglerIcon.removeClass('fa-close').addClass('fa-bars');
 
             $menu.removeClass('mobile-menu-show');
             $menu.one('transitionend', function () {
