@@ -1557,7 +1557,25 @@ footer {
     text-align: center;
 }
 
+.brand-img {
+    position: relative;
+    padding-top: 45%;
+}
 
+.brand-img .home-brand-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.brand-badge{ 
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
 @media screen and (max-width: 1600px) {
     .right-nav .right-list {
         column-gap: 50px;
