@@ -164,6 +164,29 @@ $(".featured-inventory-carousel").owlCarousel({
   },
 });
 
+$(".awards-carousel").owlCarousel({
+  loop: true,
+  margin: 8,
+  nav: false,
+  dots: false,
+  autoplay: true,
+  autoplayTimeout: 4000,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    576: {
+        items: 2,
+    },
+    992:{
+        items: 2,
+    },
+    1200: {
+      items: 2.7,
+    },
+  },
+});
+
 // locaiton dropdown toggle
 
 $(document).ready(function () {

@@ -1927,6 +1927,33 @@ line-height: 28px;
 
 
 
+.about-card {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-card img {
+    transition: transform 0.5s ease;
+    object-fit: cover;
+    height: 320px;
+    width: 100%;
+}
+
+.about-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+/* Awards Carousel */
+.award-item img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+
+
 @media screen and (max-width: 1600px) {
   .right-nav .right-list {
     column-gap: 50px;
@@ -2046,19 +2073,24 @@ line-height: 28px;
   }
   .featured-sec .section-detail {
     padding: 0 10px;
+    text-align: center;
+    margin-top: 20px;
   }
 
   .service-tabs-content-wrapper {
     margin-top: 60px;
   }
 
-    .proshop-card {
-        height: 400px;
-    }
-    .proshop-card-title {
-        font-size: 24px;
-    }
+  .proshop-card {
+      height: 400px;
+  }
+  .proshop-card-title {
+      font-size: 24px;
+  }
 
+  .about-gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
 
 
   .footer-sidebar {
@@ -2091,6 +2123,10 @@ line-height: 28px;
     font-size: 16px;
     line-height: 24px;
   }
+  .banner-title, .proshop-banner-content .banner-title{
+    font-size: 32px;
+    margin-bottom: 14px;
+  }
   
   .service-request-form-sec {
     padding: 60px 0;
@@ -2119,6 +2155,10 @@ line-height: 28px;
 @media screen and (max-width: 576px) {
   .menu-logo-box .menu-logo {
     max-width: calc(100% / 3);
+  }
+  
+  .about-gallery-grid {
+      grid-template-columns: repeat(1, 1fr);
   }
 }
 
