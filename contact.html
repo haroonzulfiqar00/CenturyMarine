@@ -15,117 +15,138 @@
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/haroon.css">
+    <link rel="stylesheet" href="./assets/css/abdullah.css">
 
 
 </head>
 
 <body>
-
-    <section class="contactsec">
-        <div class="cntactbanner-img">
-            <img src="/assets/images/about/contact-pge.png" alt="Contact Century Marine" class="img-fluid w-100 h-100">
-        </div>
-        <div class="col-lg-6">
-            <div class="cntctdetails">
-                <h1 class="">CONTACT CENTURY MARINE</h4>
-                    <p class="">Our friendly team in Newport News is here to help.</p>
+    <section class="contact-display-section w-100 overflow-hidden">
+        <div class="row m-0 align-items-center">
+            <!-- Left Side: Form -->
+            <div class="col-lg-6 col-md-12 p-0 order-2 order-lg-1">
+                <div class="contact-form-container p-3">
+                    <h2 class="contact-title text-center">Contact us</h2>
+                    <form action="#" method="POST">
+                        <div class="form-group mb-4">
+                            <input type="text" class="form-control service-form-control" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="text" class="form-control service-form-control" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="email" class="form-control service-form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="tel" class="form-control service-form-control" placeholder="Phone">
+                        </div>
+                        <div class="form-group mb-4">
+                            <textarea class="form-control service-form-control" rows="1" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-check mb-5 custom-checkbox pl-4">
+                            <input type="checkbox" class="form-check-input" id="newsletterCheck">
+                            <label class="form-check-label" for="newsletterCheck">Subscribe to Ski Dock's Newsletter</label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="theme-btn border-0 px-5 py-3">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Right Side: Image -->
+            <div class="col-lg-6 col-md-12 p-0 order-1 order-lg-2">
+                <div class="contact-image-wrapper">
+                    <img src="./assets/images/contact/banner-img.png" alt="Boating Life">
+                </div>
             </div>
         </div>
-        <div class="contact-form-box form-sec w-100">
-            <div class="form-box">
-                <h2 class="form-title-heading mb-lg-3 mb-2">Get In Touch</h2>
-                <div id="service-form">
-                    <div class="form-row gap-0">
-                        <div class="form-group w-100" >
-                            <label for="first_name" class="sr-only">First Name</label>
-                            <input type="text" name="first_name" id="first_name" placeholder="First Name *"
-                                class="custom-form-control require_check">
-                            <input type="hidden" id="honeypot">
-                            <div class="field-error" id="error_first_name"></div>
-                        </div>
+    </section>
 
-                        <div class="form-group w-100">
-                            <label for="last_name" class="sr-only">Last Name</label>
-                            <input type="text" name="last_name" id="last_name" placeholder="Last Name *"
-                                class="custom-form-control require_check">
-                            <div class="field-error" id="error_last_name"></div>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="email" class="sr-only">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Email *"
-                                class="custom-form-control require_check">
-                            <div class="field-error" id="error_email"></div>
-                        </div>
     
-                        <div class="form-group w-100">
-                            <label for="email" class="sr-only">Phone</label>
-                            <input type="tel" name="phone" id="phone" placeholder="Phone *"
-                                class="custom-form-control require_check">
-                            <div class="field-error" id="error_email"></div>
+    <section class="contact-location-section w-100 overflow-hidden py-80">
+        <div class="row m-0 align-items-center">
+            <!-- Left Side: Map -->
+            <div class="col-lg-6 col-md-12 p-0">
+                <div class="contact-map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.6253488252445!2d-111.7583852!3d33.4182967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba63a3f0d619b%3A0x628383321523456!2s3302%20E%20Main%20St%2C%20Mesa%2C%20AZ%2085213!5e0!3m2!1sen!2sus!4v1707240000000!5m2!1sen!2sus" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <!-- Right Side: Contact Info -->
+            <div class="col-lg-6 col-md-12 p-0">
+                <div class="contact-info-container p-lg-0 p-2 m-auto">
+                    <h3 class="contact-location-title mb-4">MESA, AZ</h3>
+                    <p class="contact-address mb-3">3302 E Main St, Mesa, AZ, 85213</p>
+                    <p class="contact-phone mb-lg-5 mb-3">
+                        <a href="tel:+14808359134">(480) 835-9134</a>
+                    </p>
+                    
+                    <h5 class="contact-hours-title mb-3">HOURS</h5>
+                    <div class="contact-hours-list">
+                        <div class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                            <span class="day">Tues - Fri</span>
+                            <span class="time">9AM - 6PM</span>
                         </div>
-    
-                        <div class="form-group w-100">
-                            <label for="email" class="sr-only">Message</label>
-                            <textarea class="custom-form-control" name="message" id="Message" placeholder="Message"></textarea>
-                            <div class="field-error" id="error_email"></div>
+                        <div class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                            <span class="day">Sat</span>
+                            <span class="time">9AM - 5PM</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                            <span class="day">Sun & Mon</span>
+                            <span class="time">Closed</span>
                         </div>
                     </div>
-
-                    <div class="text-center mt-lg-3 mt-2">
-                        <button class="theme-filled-btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact-location-section w-100 pt-0 overflow-hidden py-80">
+        <div class="row m-0 align-items-center">
+            <!-- Left Side: Map -->
+            <div class="col-lg-6 col-md-12 p-0">
+                <div class="contact-map-wrapper">
+                    <iframe src="https://maps.google.com/maps?q=40202+N+87th+Ave,+Peoria,+AZ+85383&output=embed" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <!-- Right Side: Contact Info -->
+            <div class="col-lg-6 col-md-12 p-0">
+                <div class="contact-info-container p-lg-0 p-2 m-auto">
+                    <h3 class="contact-location-title mb-4">Peoria, AZ</h3>
+                    <p class="contact-address mb-3">40202 N 87th Ave, Peoria, AZ 85383</p>
+                    <p class="contact-phone mb-lg-5 mb-3">
+                        <a href="tel:+16232356131">(623) 235-6131</a>
+                    </p>
+                    
+                    <h5 class="contact-hours-title mb-3">HOURS</h5>
+                    <div class="contact-hours-list">
+                        <div class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                            <span class="day">Tues - Fri</span>
+                            <span class="time">9AM - 6PM</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                            <span class="day">Sat</span>
+                            <span class="time">9AM - 5PM</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                            <span class="day">Sun & Mon</span>
+                            <span class="time">Closed</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
-
-
-    <section class="contact-info text-center py-5 ">
-        <div class="row m-0 justify-content-center">
-            <div class="col-md-4 mb-4">
-                <div class="info-box">
-                    <img class="pb-3" src="/assets/images/about/location.png" alt="location">
-                    <p class="">1071 J. Clyde Morris Blvd. <br class="d-lg-block d-none">Newport
-                        News, Virginia, 23602</p>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="info-box">
-                    <img class="pb-3" src="/assets/images/about/call.png" alt="call">
-                    <h5 class="">757.516.4861</h5>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="info-box">
-                    <img class="pb-3" src="/assets/images/about/time.png" alt="time">
-                    <p class="">Mon - Fri 8:00 AM - 5:00 PM</p>
-                    <p class="">Sat 9:00 AM - 12:00 PM</p>
-                    <p class="">Sun Closed</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contct-map">
-    <div class="map-container">
-        <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.3851676164197!2d-76.47002118466838!3d37.08243447989452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b08fcbfc55f66b%3A0xc5c7c0e9894e02ef!2s1071%20J%20Clyde%20Morris%20Blvd%2C%20Newport%20News%2C%20VA%2023602%2C%20USA!5e0!3m2!1sen!2sus!4v1731277608885!5m2!1sen!2sus"
-        width="100%"
-        height="550"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
-    </section>
-
-
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -141,7 +162,13 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+          // Your custom options
+        });
+    </script>
 </body>
 
 </html>

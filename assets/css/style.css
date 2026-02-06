@@ -811,6 +811,7 @@ text-transform: uppercase;
   outline: none;
   background: transparent;
   margin-bottom: 5px;
+  border-radius: 0 !important;
   color: #000;
 }
 
@@ -1979,6 +1980,20 @@ line-height: 28px;
   
 }
 
+.contact-form-container{
+  max-width: 370px;
+  margin: 0 auto;
+}
+.contact-location-section .contact-location-title{
+  color: #111;
+  font-family: "League Spartan";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 125% */
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 1600px) {
   .right-nav .right-list {
     column-gap: 50px;
@@ -2119,6 +2134,13 @@ line-height: 28px;
   .about-gallery-grid {
       grid-template-columns: repeat(2, 1fr);
   }
+  .contact-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.contact-display-section .contact-image-wrapper{
+  min-height: auto !important;
+}
 
 
   .footer-sidebar {
@@ -2202,4 +2224,118 @@ line-height: 28px;
     height: 400px;
     padding: 0 20px;
   }
+}
+
+/* Contact Page Styles */
+.contact-title {
+  font-family: "Playwrite US Trad", cursive;
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--Soft-black);
+  margin-bottom: 40px;
+}
+
+.contact-image-wrapper {
+  height: 100%;
+  min-height: 670px;
+  width: 100%;
+  position: relative;
+}
+
+.contact-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-checkbox .form-check-input {
+  width: 18px;
+  height: 18px;
+  margin-top: 5px;
+  border: 1px solid #000;
+  border-radius: 0 !important;
+}
+
+.custom-checkbox .form-check-input:checked {
+  background-color: var(--Blue-bright);
+  border-color: var(--Blue-bright);
+}
+
+.custom-checkbox .form-check-label {
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+  color: var(--Soft-black);
+}
+
+.contact-map-wrapper {
+  height: 100%;
+  min-height: 500px;
+  width: 100%;
+}
+
+.contact-map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  min-height: 500px;
+}
+
+.contact-info-container {
+  max-width: 350px;
+  width: 100%;
+}
+
+.contact-location-title {
+  color: var(--Soft-black);
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.contact-address {
+  color: var(--Soft-black);
+  font-family: "League Spartan", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.contact-phone a {
+  color: #328DB0; 
+  font-family: "League Spartan", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.contact-phone a:hover {
+  text-decoration: underline;
+}
+
+.contact-hours-title {
+  color: var(--Soft-black);
+  font-family: "League Spartan", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.contact-hours-list {
+  max-width: 400px;
+  width: 100%;
+}
+
+.contact-hours-list .day,
+.contact-hours-list .time {
+  color: var(--Soft-black);
+  font-family: "League Spartan", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contact-hours-list .border-bottom {
+  border-bottom: 1px solid rgba(196, 196, 196, 0.40) !important;
 }
