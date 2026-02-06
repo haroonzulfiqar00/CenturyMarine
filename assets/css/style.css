@@ -2172,6 +2172,15 @@ line-height: 28px;
   width: 100%;
   border: 1px solid #D9D9D9;
 }
+.trade-form-sec .section-title{
+  color: var(--Soft-black, #111);
+  font-family: "League Spartan";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px; 
+  text-transform: uppercase;
+}
 
 /* FAQ Section Styles */
 .faq-item {
@@ -2357,7 +2366,10 @@ line-height: 28px;
 .contact-display-section .contact-image-wrapper{
   min-height: auto !important;
 }
-
+.trade-form-sec .section-title{
+  font-size: 32px;
+  line-height: 40px; 
+}
 
   .footer-sidebar {
     border-left: none;
@@ -2404,10 +2416,18 @@ line-height: 28px;
     .py-120 {
     padding-top: 40px;
     padding-bottom: 40px;
-}
-.pb-80 {
-  padding-bottom: 30px;
-}
+  }
+  .pb-80 {
+    padding-bottom: 30px;
+  }
+  .py-80 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .featured-sec .section-title {
+      font-size: 22px;
+      line-height: 30px;
+  }
   .adaptive-slide {
     height: 500px;
   }
@@ -2419,6 +2439,10 @@ line-height: 28px;
   }
   .service-grid-card {
     height: 500px;
+  }
+  .trade-form-sec .section-title{
+    font-size: 24px;
+    line-height: 32px; 
   }
 }
 
