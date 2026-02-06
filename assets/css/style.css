@@ -76,6 +76,9 @@ a:hover {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.pb-80 {
+  padding-bottom: 80px;
+}
 .py-120 {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -1951,8 +1954,30 @@ line-height: 28px;
     height: 480px;
     object-fit: cover;
 }
-
-
+.adaptive-hero-section .common-hero-content{
+  background: rgba(23, 82, 200, 0.9);
+}
+.adaptive-hero-section .common-hero-content .theme-outline-btn{
+  background: transparent;
+  border-color: #fff;
+  padding: 16px 26px;
+}
+.amazing-events{
+  background: rgba(17, 17, 17, 0.98);
+}
+.amazing-events .section-title{
+  color: #fff;
+}
+.amazing-events .section-description{
+  color: #fff;
+}
+.amazing-events .theme-outline-btn,.amazing-events p{
+  color: #fff;
+}
+.amazing-events p a:hover{
+  color: #007bff;
+  
+}
 
 @media screen and (max-width: 1600px) {
   .right-nav .right-list {
@@ -2048,6 +2073,9 @@ line-height: 28px;
     padding-top: 80px;
     padding-bottom: 80px;
 }
+.pb-80 {
+  padding-bottom: 50px;
+}
   .desktop-header {
     display: none;
   }
@@ -2137,6 +2165,9 @@ line-height: 28px;
     .py-120 {
     padding-top: 40px;
     padding-bottom: 40px;
+}
+.pb-80 {
+  padding-bottom: 30px;
 }
   .adaptive-slide {
     height: 500px;
