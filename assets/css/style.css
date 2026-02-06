@@ -2150,6 +2150,65 @@ line-height: 28px;
   line-height: 24px;
   margin-bottom: 40px;
 }
+.location-card-number{
+  color: var(--Blue-bright, #2464DB);
+  text-align: center;
+  font-family: "Playwrite US Trad";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.selltrade-section .location-card-desc {
+    margin-bottom: 0px;
+}
+.trade-form-sec{
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+}
+.trade-form-sec .form-here{
+  height: 100%;
+  min-height: 960px;
+  width: 100%;
+  border: 1px solid #D9D9D9;
+}
+
+/* FAQ Section Styles */
+.faq-item {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.4);
+  padding: 24px 0;
+  margin-bottom: 0px;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.faq-question {
+  font-family: "League Spartan", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--Soft-black);
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+.faq-body {
+  display: none;
+  padding-top: 20px;
+}
+
+.faq-body p {
+  color: var(--Soft-black);
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
 
 @media screen and (max-width: 1600px) {
   .right-nav .right-list {
@@ -2319,6 +2378,7 @@ line-height: 28px;
     margin: 0 auto;
   }
 }
+
 @media screen and (max-width: 768px) {
   .common-hero-content {
     padding: 30px;
@@ -2382,5 +2442,7 @@ line-height: 28px;
     padding: 0 20px;
   }
 }
+
+
 
 

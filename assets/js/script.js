@@ -228,4 +228,11 @@ $(document).ready(function () {
     $(".service-tab-content").removeClass("active");
     $("#" + target).addClass("active");
   });
+
+  // FAQ Accordion
+  $(".faq-header").click(function () {
+    $(this).next(".faq-body").slideToggle(300);
+    // Optional: Toggle active class for arrow rotation if we add one later
+    $(this).toggleClass("active");
+  });
 });
