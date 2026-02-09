@@ -142,7 +142,7 @@ $(".adaptive-carousel").owlCarousel({
 
 $(".featured-inventory-carousel").owlCarousel({
   loop: true,
-  margin: 30,
+  margin: 40,
   nav: false,
   dots: false,
   autoplay: true,

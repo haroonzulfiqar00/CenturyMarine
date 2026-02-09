@@ -16,7 +16,9 @@
   --lightest-gray-color: #fafafa;
   --Blue-bright: #2464db;
 }
-
+body::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari */
+}
 /* Common css start here  */
 
 a {
@@ -247,7 +249,7 @@ ul {
 }
 
 .container-century-md {
-  max-width: 1488px;
+  max-width: 1360px;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -306,7 +308,7 @@ ul {
 }
 
 .desktop-header .centaral-nav-link {
-  padding: 0 17px;
+  padding: 0 20px;
   color: var(--white-color);
 }
 
@@ -431,16 +433,16 @@ ul {
   font-size: 16px !important;
 }
 .desktop-right-dropdown {
-  position: fixed;
-  top: 84px;
-  right: 0;
-  background: var(--Soft-black);
-  padding: 24px 120px 32px 48px;
-  width: 382px;
-  height: calc(100vh - 84px);
-
-  transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    background: rgba(17, 17, 17, 0.96);
+    padding: 25px 120px 33px 50px;
+    width: 382px;
+    height: calc(100vh - 80px);
+    transform: translateX(100%);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
 }
 
 .desktop-right-dropdown.show-company-dropdown {
@@ -455,12 +457,12 @@ ul {
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
-  padding: 5px 0;
+  padding: 8px 0;
   display: block;
 }
 
 .larger-company-list {
-  margin-bottom: 55px;
+  margin-bottom: 64px;
 }
 
 .smaller-company-list li a {
@@ -471,7 +473,7 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  padding: 5px 0;
+  padding: 8px 0;
   display: block;
 }
 
@@ -627,7 +629,7 @@ ul {
   font-family: "League Spartan", sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 24px;
   text-transform: uppercase;
   margin-bottom: 24px;
@@ -638,7 +640,7 @@ ul {
   font-family: "League Spartan", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 28px;
   margin-bottom: 12px;
   display: block;
@@ -663,7 +665,7 @@ ul {
 
 .menu-card-logo {
   display: block;
-  max-width: 140px;
+  max-width: 193px;
   margin: 15px 0;
 }
 
@@ -676,7 +678,7 @@ ul {
 
 .menu-cardhr {
   border: none;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.40);
   margin: 10px 0;
 }
 
@@ -1166,9 +1168,12 @@ text-transform: uppercase;
   background-color: #111;
   color: #fff;
 }
+.main-footer .container-century-fluid{
+  max-width: 1525px !important;
+}
 
 .footer-newsletter {
-  padding-top: 40px;
+  padding: 60px 0px;
 }
 
 .newsletter-form-box {
@@ -1181,7 +1186,7 @@ text-transform: uppercase;
   height: 100%;
   border-radius: 0 !important;
   font-family: "League Spartan", sans-serif;
-  padding: 0 20px !important;
+  padding: 13px !important;
   font-size: 16px;
   color: rgba(17, 17, 17, 0.6);
 }
@@ -1193,10 +1198,9 @@ text-transform: uppercase;
 .footer-title {
   font-family: "League Spartan", sans-serif;
   font-size: 20px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.40);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.4);
   margin-bottom: 25px;
-  opacity: 0.6;
   letter-spacing: 0.5px;
 }
 
@@ -1244,11 +1248,11 @@ text-transform: uppercase;
   padding-left: 30px;
 }
 
-.footer-sidebar-content {
+/* .footer-sidebar-content {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
+} */
 
 .footer-sidebar .footer-logo img {
   max-width: 157px;
@@ -1402,19 +1406,6 @@ line-height: 24px;
   background: var(--Blue-bright);
   border-color: var(--Blue-bright);
   color: var(--white-color);
-}
-
-@media (max-width: 1199px) {
-  .common-hero-section {
-    height: 600px;
-  }
-  .common-hero-content {
-    padding: 40px;
-    min-height: 400px;
-  }
-  .common-hero-content .hero-title {
-    font-size: 40px;
-  }
 }
 
 /* Secondary Hero Section End */
@@ -1606,9 +1597,6 @@ line-height: 28px;
 
 .adaptive-slide {
   height: 600px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1623,7 +1611,18 @@ line-height: 28px;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Dark overlay to match image */
+  background: rgba(17, 17, 17, 0.6);
+  z-index: 1;
+}
+
+.adaptive-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .adaptive-content {
@@ -1631,6 +1630,7 @@ line-height: 28px;
   z-index: 2;
   max-width: 700px;
   padding: 0 15px;
+  margin-top: 80px;
 }
 
 .adaptive-title {
@@ -1684,7 +1684,7 @@ line-height: 28px;
 
 .adaptive-carousel.owl-carousel .owl-dots {
   position: absolute;
-  bottom: 40px;
+  bottom: 25px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1704,8 +1704,18 @@ line-height: 28px;
   background: #fff !important;
   width: 24px !important; /* Slightly longer dash for active */
 }
+.boats-for-sale-sec .section-header-detail {
+  width: 76%;
+  margin: 0 auto;
+  padding-right: 4px;
+}
+/* .boats-for-sale-sec .section-description {
+  margin-bottom: 40px;
+} */
 .boats-for-sale-sec .section-detail {
-  width: 83%;
+  width: 76%;
+  margin: 0 auto;
+  padding-right: 4px;
 }
 .boats-for-sale-sec .section-header .theme-outline-btn {
   width: 200px;
@@ -2269,6 +2279,24 @@ line-height: 28px;
 }
 
 @media screen and (max-width: 1200px) {
+  
+  .common-hero-section {
+    height: 600px;
+  }
+  .common-hero-content {
+    padding: 40px;
+    min-height: 400px;
+  }
+  .common-hero-content .hero-title {
+    font-size: 40px;
+  }
+  .banner-title {
+    font-size: 40px;
+}
+.brand-badge img {
+    width: 200px;
+    padding: 10px;
+}
   .centaral-nav-box,
   .logo-box,
   .right-nav-box {
@@ -2306,6 +2334,13 @@ line-height: 28px;
   .right-nav .right-list {
     column-gap: 0;
   }
+  .service-grid-card {
+    height: 450px;
+}
+.grid-card-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
 }
 
 @media screen and (max-width: 991px) {
@@ -2313,8 +2348,20 @@ line-height: 28px;
     padding-top: 80px;
     padding-bottom: 80px;
 }
+.py-80 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 .pb-80 {
   padding-bottom: 50px;
+}
+.img-fluid {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.newsletter-form-box .row{
+  gap: 15px;
 }
   .desktop-header {
     display: none;
@@ -2328,7 +2375,29 @@ line-height: 28px;
     padding-left: 40px;
     padding-right: 40px;
   }
-  
+
+  .banner-title {
+    font-size: 30px;
+    line-height: 46px;
+    margin-bottom: 30px;
+}
+.boats-for-sale-sec .section-header-img img{
+  width: 100%;
+}
+  .boats-for-sale-sec .section-header-detail {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+    padding-right: 0;
+}
+.section-title {
+    font-size: 30px;
+    line-height: 32px;
+}
+.financing-sec .section-header {
+  text-align: center;
+  padding: 20px 0;
+}
   .common-hero-section {
     height: auto;
     padding: 100px 0;
@@ -2338,6 +2407,8 @@ line-height: 28px;
   }
   .boats-for-sale-sec .section-detail {
     width: 100%;
+    text-align: center;
+    margin-top: 20px;
   }
   .featured-sec .section-detail {
     padding: 0 10px;
@@ -2389,6 +2460,9 @@ line-height: 28px;
     float: none !important;
     margin: 0 auto;
   }
+  .footer-newsletter {
+  padding: 40px 0px;
+}
 }
 
 @media screen and (max-width: 768px) {
