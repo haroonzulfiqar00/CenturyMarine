@@ -113,7 +113,7 @@ ul {
   padding: 16px 26px;
   text-decoration: none;
   transition: all 0.5s;
-  min-width: 160px;
+  /* min-width: 160px; */
   min-height: 40px;
   flex-shrink: 0;
   transform: skew(-10deg);
@@ -139,10 +139,10 @@ ul {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  /* padding: 16px 26px; */
+  padding: 16px 26px;
   text-decoration: none;
   transition: all 0.5s;
-  min-width: 200px;
+  /* min-width: 200px; */
   min-height: 48px;
   flex-shrink: 0;
 }
@@ -170,7 +170,7 @@ ul {
   padding: 16px 26px;
   text-decoration: none;
   transition: all 0.5s;
-  min-width: 160px;
+  /* min-width: 160px; */
   min-height: 40px;
   flex-shrink: 0;
 }
@@ -1429,7 +1429,7 @@ line-height: 24px;
   cursor: pointer;
   transition: all 0.3s ease;
   border: 1px solid transparent;
-  /* min-width: 420px; */
+  width: 420px; 
 }
 
 .service-tab-item span {
@@ -1717,8 +1717,9 @@ line-height: 28px;
   margin: 0 auto;
   padding-right: 4px;
 }
-.boats-for-sale-sec .section-header .theme-outline-btn {
+.boats-for-sale-sec .section-header-detail .theme-outline-btn {
   width: 200px;
+  padding: unset;
   margin: 0 auto;
 }
 
@@ -2404,7 +2405,29 @@ line-height: 28px;
   }
   .common-hero-content {
     min-height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
+      .common-hero-content .hero-title {
+        font-size: 35px;
+    }
+    .additional-services-sec .additional-services-left {
+      text-align: center;
+    }
+    .additional-services-sec .additional-services-left .service-tabs-list .service-tab-item{
+      width: 100%;
+        padding: 12px;
+    }
+.service-request-form-sec .form-title-heading {
+    margin-bottom: 20px;
+    font-size: 30px;
+} 
+
+    .service-content-title {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
   .boats-for-sale-sec .section-detail {
     width: 100%;
     text-align: center;
@@ -2480,9 +2503,20 @@ line-height: 28px;
     font-size: 32px;
     margin-bottom: 14px;
   }
-  
+      .common-hero-content .hero-title {
+        font-size: 25px;
+        line-height: 33px;
+    }
+.service-tab-item span {
+    font-size: 18px;
+    line-height: 25px;
+}
+.additional-services-left .section-title {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
   .service-request-form-sec {
-    padding: 60px 0;
+    padding: 40px 0;
   }
   .border-left-d {
     border-left: none;
