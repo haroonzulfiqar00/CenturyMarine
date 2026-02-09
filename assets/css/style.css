@@ -16,9 +16,7 @@
   --lightest-gray-color: #fafafa;
   --Blue-bright: #2464db;
 }
-body::-webkit-scrollbar {
-  display: none;               /* Chrome, Safari */
-}
+
 /* Common css start here  */
 
 a {
